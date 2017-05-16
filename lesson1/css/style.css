@@ -3,6 +3,69 @@ body {
   height: 100%;
 }
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+}
+.cont {
+  width: 1600px;
+  height: auto;
+  background: darkgray;
+}
+.cont .head {
+  height: 100px;
+  background: gainsboro;
+}
+.cont .upperMenu {
+  height: 51px;
+  background: grey;
+}
+.cont .promo {
+  height: 614px;
+  background: #7e7e7e;
+}
+.cont .spacer1 {
+  height: 98px;
+  background: gainsboro;
+}
+.cont .categories {
+  height: 823px;
+  background: grey;
+  width: 1141px;
+}
+.cont .spacer2 {
+  height: 211px;
+  background: ghostwhite;
+}
+.cont .catalog {
+  height: 767px;
+  background: grey;
+}
+.cont .spacer3 {
+  height: 219px;
+  background: #7e7e7e;
+}
+.cont .promo2 {
+  height: 529px;
+  width: 1140px;
+  background: gainsboro;
+}
+.cont .spacer4 {
+  height: 97px;
+  background: ghostwhite;
+}
+.cont .subscribe {
+  height: 438px;
+  background: grey;
+}
+.cont .spacer5 {
+  height: 109px;
+  background: ghostwhite;
+}
+.cont .footerMenu {
+  height: 349px;
+  background: grey;
+}
+.cont .copyright {
+  height: 79px;
+  background: gainsboro;
 }
