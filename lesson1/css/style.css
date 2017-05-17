@@ -9,36 +9,272 @@ body {
 .cont {
   width: 1600px;
   height: auto;
-  background: darkgray;
 }
 .cont .head {
   height: 100px;
-  background: gainsboro;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ececec;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+.cont .head .logo {
+  margin-left: 227px;
+  margin-top: 25px;
+  width: 59px;
+  height: 51px;
+}
+.cont .head .brandtext {
+  margin-left: 13px;
+  margin-bottom: 12px;
+}
+.cont .head .headsearch {
+  margin-left: 429px;
+  margin-top: -45px;
+}
+.cont .head .headsearch .fa-caret-down {
+  color: #838383;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 400;
+  line-height: 32px;
+  /* Approximation due to font substitution */
+  text-align: right;
+  margin-left: 8px;
+}
+.cont .head .headsearch .headbrowsebt {
+  font-family: Lato;
+  padding-right: 9px;
+  color: #222222;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 300;
+  line-height: 32px;
+  /* Approximation due to font substitution */
+  text-align: right;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+  background: -moz-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+  background: -o-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+  background: -ms-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+  background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+  width: 87px;
+  height: 38px;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+.cont .head .headsearch .headbrowsebtsearch {
+  width: 37px;
+  height: 38px;
+  color: #a4a4a4;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e6e6;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+  background: -moz-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+  background: -o-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+  background: -ms-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+  background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+  cursor: pointer;
+}
+.cont .head .headsearch .headsearchinput {
+  /*border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;*/
+  border-left: none;
+  border-right: none;
+  border-top: solid;
+  /* border-style: solid;*/
+  border-width: 1px;
+  border-color: #e6e6e6;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 317px;
+  height: 38px;
+  display: block;
+  float: left;
+  padding-left: 16px;
+  font-family: Lato;
+  color: #a4a4a4;
+  padding-right: 16px;
+}
+.cont .head .cart {
+  float: right;
+  margin-right: 231px;
+  margin-top: -38px;
+}
+.cont .head .cart .account {
+  background-color: #f16d7f;
+  width: 130px;
+  height: 38px;
+  border: none;
+  font-family: Lato;
+  color: #ffffff;
+  font-size: 15px;
+  margin-left: 26px;
+  float: right;
+  display: block;
+  cursor: pointer;
+}
+.cont .head .cart .cartimg {
+  float: right;
+  display: block;
+  padding-top: 5px;
 }
 .cont .upperMenu {
+  text-align: center;
   height: 51px;
-  background: grey;
+  background-color: #ffffff;
+}
+.cont .upperMenu ul {
+  display: block;
+  padding-top: 13px;
+  list-style: none;
+}
+.cont .upperMenu ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.cont .upperMenu ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Lato;
+  color: #222222;
+  font-size: 13px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 1px;
 }
 .cont .promo {
-  height: 614px;
-  background: #7e7e7e;
+  height: 665px;
+  background-image: url('../img/promo.png');
+}
+.cont .promo .promotext {
+  width: 509px;
+  height: 92px;
+  background-image: url('../img/promotext.png');
+  margin-top: 225px;
+  margin-left: 230px;
 }
 .cont .spacer1 {
   height: 98px;
-  background: gainsboro;
 }
 .cont .categories {
   height: 823px;
-  background: grey;
   width: 1141px;
+}
+.cont .categories .catText {
+  background: white;
+  float: left;
+  text-transform: uppercase;
+  margin-top: 26px;
+}
+.cont .categories .catText .catText1 {
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Lato;
+  color: #222222;
+  font-size: 18px;
+  /* Approximation due to font substitution */
+  font-weight: 900;
+}
+.cont .categories .catText .catText2 {
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Lato;
+  color: #f16d7f;
+  font-size: 30px;
+  /* Approximation due to font substitution */
+  font-weight: 900;
+}
+.cont .categories .catLeft {
+  float: left;
+  width: 560px;
+  height: 823px;
+}
+.cont .categories .catLeft .catMen {
+  width: 560px;
+  height: 542px;
+  background-image: url('../img/catMen.png');
+}
+.cont .categories .catLeft .catAccessories {
+  margin-top: 20px;
+  width: 560px;
+  height: 261px;
+  background-image: url('../img/catAccessories.png');
+}
+.cont .categories .catRight {
+  float: right;
+  width: 560px;
+  height: 823px;
+}
+.cont .categories .catRight .catWomen {
+  width: 560px;
+  height: 261px;
+  background-image: url('../img/catWomen.png');
+}
+.cont .categories .catRight .catKids {
+  margin-top: 20px;
+  width: 560px;
+  height: 542px;
+  background-image: url('../img/catKids.png');
 }
 .cont .spacer2 {
   height: 211px;
-  background: ghostwhite;
+  text-align: center;
+}
+.cont .spacer2 .sp2t1 {
+  padding-top: 100px;
+  font-family: Lato;
+  color: #222222;
+  font-size: 30px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+}
+.cont .spacer2 .sp2t2 {
+  font-family: Lato;
+  color: #9f9f9f;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 400;
+  line-height: 50px;
 }
 .cont .catalog {
   height: 767px;
-  background: grey;
+  width: 1141px;
+}
+.cont .catalog ul {
+  list-style: none;
+}
+.cont .catalog ul li {
+  display: block;
+}
+.cont .catalog ul li .item {
+  width: 263px;
+  height: 364px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ececec;
+  box-sizing: border-box;
+  background-color: #ffafff;
+  float: left;
+  margin-right: 29px;
+  margin-bottom: 39px;
+}
+.cont .catalog ul li:nth-child(4n) .item {
+  margin-right: 0;
 }
 .cont .spacer3 {
   height: 219px;

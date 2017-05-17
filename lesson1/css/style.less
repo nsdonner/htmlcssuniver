@@ -10,65 +10,321 @@ html, body {
 .cont {
 
   width: 1600px;
-  height:auto;
-  background: darkgray;
-  .head{
-    height:100px;
-    background: gainsboro;
+  height: auto;
+
+  .head {
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ececec;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+
+    .logo {
+      margin-left: 227px;
+      margin-top: 25px;
+      width: 59px;
+      height: 51px;
+    }
+
+    .brandtext {
+      margin-left: 13px;
+      margin-bottom: 12px;
+
+    }
+
+    .headsearch {
+      margin-left: 429px;
+      margin-top: -45px;
+      .fa-caret-down {
+        color: #838383;
+        font-size: 14px; /* Approximation due to font substitution */
+        font-weight: 400;
+        line-height: 32px; /* Approximation due to font substitution */
+        text-align: right;
+        margin-left: 8px;
+      }
+
+      .headbrowsebt {
+
+        font-family: Lato;
+        padding-right: 9px;
+        color: #222222;
+        font-size: 14px; /* Approximation due to font substitution */
+        font-weight: 300;
+        line-height: 32px; /* Approximation due to font substitution */
+        text-align: right;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #e6e6e6;
+        box-sizing: border-box;
+        background: -webkit-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+        background: -moz-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+        background: -o-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+        background: -ms-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+        background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+        width: 87px;
+        height: 38px;
+        display: block;
+        float: left;
+        cursor: pointer;
+      }
+
+      .headbrowsebtsearch {
+        width: 37px;
+        height: 38px;
+        color: #a4a4a4;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #e6e6e6;
+        box-sizing: border-box;
+        background: -webkit-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+        background: -moz-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+        background: -o-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+        background: -ms-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
+        background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+        cursor: pointer;
+      }
+
+      .headsearchinput {
+        /*border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;*/
+        border-left: none;
+        border-right: none;
+        border-top: solid;
+        /* border-style: solid;*/
+        border-width: 1px;
+        border-color: #e6e6e6;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        width: 317px;
+        height: 38px;
+        display: block;
+        float: left;
+        padding-left: 16px;
+        font-family: Lato;
+        color: #a4a4a4;
+        padding-right: 16px;
+      }
+    }
+
+    .cart {
+      float: right;
+      margin-right: 231px;
+      margin-top: -38px;
+
+      .account {
+        background-color: #f16d7f;
+        width: 130px;
+        height: 38px;
+        border: none;
+        font-family: Lato;
+        color: #ffffff;
+        font-size: 15px;
+        margin-left: 26px;
+        float: right;
+        display: block;
+        cursor: pointer;
+      }
+
+      .cartimg {
+        float: right;
+        display: block;
+        padding-top: 5px;
+      }
+
+    }
+
   }
 
-  .upperMenu{
+  .upperMenu {
+    text-align: center;
     height: 51px;
-    background: grey;
-  }
-  .promo{
-    height: 614px;
-    background: #7e7e7e;
-  }
-  .spacer1{
-    height: 98px;
-    background: gainsboro;
-  }
-  .categories{
-    height: 823px;
-    background: grey;
-    width: 1141px;
-  }
-  .spacer2{
-    height: 211px;
-    background: ghostwhite;
-  }
-  .catalog{
-    height: 767px;
-    background: grey;
+    background-color: #ffffff;
+
+    ul {
+      display: block;
+      padding-top: 13px;
+      list-style: none;
+      li {
+        display: inline-block;
+        margin-left: 40px;
+      }
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Lato;
+        color: #222222;
+        font-size: 13px; /* Approximation due to font substitution */
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 1px;
+      }
+    }
 
   }
-  .spacer3{
+  .promo {
+    height: 665px;
+    background-image: url('../img/promo.png');
+    .promotext {
+      width: 509px;
+      height: 92px;
+      background-image: url('../img/promotext.png');
+      margin-top: 225px;
+      margin-left: 230px;
+    }
+
+  }
+  .spacer1 {
+    height: 98px;
+
+  }
+  .categories {
+    height: 823px;
+    width: 1141px;
+
+    .catText {
+      background: white;
+      float: left;
+      text-transform: uppercase;
+      margin-top: 26px;
+      .catText1 {
+        padding-top: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: Lato;
+        color: #222222;
+        font-size: 18px; /* Approximation due to font substitution */
+        font-weight: 900;
+      }
+      .catText2 {
+        padding-bottom: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: Lato;
+        color: #f16d7f;
+        font-size: 30px; /* Approximation due to font substitution */
+        font-weight: 900;
+      }
+    }
+
+    .catLeft {
+      float: left;
+      width: 560px;
+      height: 823px;
+
+      .catMen {
+        width: 560px;
+        height: 542px;
+        background-image: url('../img/catMen.png');
+      }
+      .catAccessories {
+        margin-top: 20px;
+        width: 560px;
+        height: 261px;
+        background-image: url('../img/catAccessories.png');
+      }
+
+    }
+
+    .catRight {
+      float: right;
+      width: 560px;
+      height: 823px;
+
+      .catWomen {
+        width: 560px;
+        height: 261px;
+        background-image: url('../img/catWomen.png');
+
+      }
+      .catKids {
+        margin-top: 20px;
+        width: 560px;
+        height: 542px;
+        background-image: url('../img/catKids.png');
+      }
+
+    }
+  }
+  .spacer2 {
+    height: 211px;
+    text-align: center;
+    .sp2t1 {
+      padding-top: 100px;
+      font-family: Lato;
+      color: #222222;
+      font-size: 30px; /* Approximation due to font substitution */
+      font-weight: 700;
+
+    }
+    .sp2t2 {
+      font-family: Lato;
+      color: #9f9f9f;
+      font-size: 14px; /* Approximation due to font substitution */
+      font-weight: 400;
+      line-height: 50px;
+    }
+  }
+  .catalog {
+    height: 767px;
+    width: 1141px;
+    ul {
+      list-style: none;
+      li {
+        display: block;
+        .item {
+          width: 263px;
+          height: 364px;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #ececec;
+          box-sizing: border-box;
+          background-color: #ffafff;
+          float: left;
+          margin-right: 29px;
+          margin-bottom: 39px;
+        }
+        &:nth-child(4n){
+          .item{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+  }
+  .spacer3 {
     height: 219px;
     background: #7e7e7e;
   }
-  .promo2{
+  .promo2 {
     height: 529px;
     width: 1140px;
     background: gainsboro;
   }
-  .spacer4{
+  .spacer4 {
     height: 97px;
     background: ghostwhite;
   }
-  .subscribe{
+  .subscribe {
     height: 438px;
     background: grey;
   }
-  .spacer5{
+  .spacer5 {
     height: 109px;
     background: ghostwhite;
   }
-  .footerMenu{
+  .footerMenu {
     height: 349px;
     background: grey;
   }
-  .copyright{
+  .copyright {
     height: 79px;
     background: gainsboro;
   }
