@@ -38,15 +38,15 @@ body {
   width: 59px;
   height: 51px;
 }
-.cont .head .brandtext {
+.cont .head .brandText {
   margin-left: 13px;
   margin-bottom: 12px;
 }
-.cont .head .headsearch {
+.cont .head .headSearch {
   margin-left: 429px;
   margin-top: -45px;
 }
-.cont .head .headsearch .fa-caret-down {
+.cont .head .headSearch .fa-caret-down {
   color: #838383;
   font-size: 14px;
   /* Approximation due to font substitution */
@@ -56,10 +56,10 @@ body {
   text-align: right;
   margin-left: 8px;
 }
-.cont .head .headsearch .fa-caret-down:focus {
+.cont .head .headSearch .fa-caret-down:focus {
   outline: none;
 }
-.cont .head .headsearch .headbrowsebt {
+.cont .head .headSearch .headBrowseBt {
   font-family: Lato;
   padding-right: 9px;
   color: #222222;
@@ -86,10 +86,10 @@ body {
   float: left;
   cursor: pointer;
 }
-.cont .head .headsearch .headbrowsebt:focus {
+.cont .head .headSearch .headBrowseBt:focus {
   outline: none;
 }
-.cont .head .headsearch .headbrowsebtsearch {
+.cont .head .headSearch .headBrowseBtSearch {
   width: 37px;
   height: 38px;
   color: #a4a4a4;
@@ -106,10 +106,10 @@ body {
   background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
   cursor: pointer;
 }
-.cont .head .headsearch .headbrowsebtsearch:focus {
+.cont .head .headSearch .headBrowseBtSearch:focus {
   outline: none;
 }
-.cont .head .headsearch .headsearchinput {
+.cont .head .headSearch .headSearchInput {
   /*border-bottom-right-radius: 3px;
         border-top-right-radius: 3px;*/
   border-left: none;
@@ -129,7 +129,7 @@ body {
   color: #a4a4a4;
   padding-right: 16px;
 }
-.cont .head .headsearch .headsearchinput:focus {
+.cont .head .headSearch .headSearchInput:focus {
   outline: none;
 }
 .cont .head .cart {
