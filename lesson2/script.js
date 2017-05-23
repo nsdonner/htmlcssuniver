@@ -18,14 +18,14 @@ window.onload = function () {
 
             elem.onmouseleave = function (e) {
 
-                elem.getElementsByClassName('b1')[0].removeChild(img);
-                elem.getElementsByClassName('b2')[0].style.boxShadow = '';
+                elem.getElementsByClassName('itemImageBlock')[0].removeChild(img);
+                elem.getElementsByClassName('itemTextBlock')[0].style.boxShadow = '';
             };
 
             elem.onmouseenter = function (e) {
 
-                elem.getElementsByClassName('b1')[0].appendChild(img);
-                elem.getElementsByClassName('b2')[0].style.boxShadow = '0px 5px 8px 0px rgba(0, 0, 0, 0.16)';
+                elem.getElementsByClassName('itemImageBlock')[0].appendChild(img);
+                elem.getElementsByClassName('itemTextBlock')[0].style.boxShadow = '0px 5px 8px 0px rgba(0, 0, 0, 0.16)';
             }
 
         }

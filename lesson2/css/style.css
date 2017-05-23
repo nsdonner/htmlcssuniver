@@ -14,12 +14,185 @@ body {
   top: -284px;
   cursor: pointer;
 }
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 .cont {
   width: 1600px;
   height: auto;
   border-style: solid;
   border-width: 1px;
   border-color: #ececec;
+}
+.cont .leftArrowDiv {
+  height: 47px;
+  width: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  float: left;
+  margin-top: 350px;
+  line-height: 47px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.cont .imgDiv {
+  float: left;
+  background-image: url('../img/goodImg.png');
+  height: 724px;
+  width: 597px;
+  margin-left: 430px;
+}
+.cont .rightArrowDiv {
+  cursor: pointer;
+  margin-top: 350px;
+  height: 47px;
+  width: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  float: right;
+  line-height: 47px;
+  text-align: center;
+  color: white;
+}
+.cont .goodImgCont {
+  height: 777px;
+  width: 1600px;
+  background-color: #f7f7f7;
+}
+.cont .goodDescrCont {
+  clear: both;
+  height: 730px;
+  width: 1141px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  box-sizing: border-box;
+  margin-top: -76px;
+  background-color: white;
+}
+.cont .goodDescrCont .goodDescr {
+  width: 618px;
+  margin-top: 73px;
+  text-align: center;
+}
+.cont .goodDescrCont .goodDescr h2 {
+  text-transform: uppercase;
+  font-family: Lato;
+  color: #4d4d4d;
+  font-size: 18px;
+  /* Approximation due to font substitution */
+  font-weight: 900;
+  margin-top: 17px;
+}
+.cont .goodDescrCont .goodDescr h4 {
+  font-family: Lato;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cont .goodDescrCont .goodDescr p {
+  margin-top: 67px;
+  font-family: Lato;
+  color: #5e5e5e;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+.cont .goodDescrCont .goodDescr p.price {
+  font-family: Lato;
+  color: #ef5b70;
+  font-size: 24px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  margin-top: 34px;
+  margin-bottom: 37px;
+}
+.cont .goodDescrCont .goodDescr span {
+  font-family: Lato;
+  color: #2f2f2f;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cont .goodDescrCont .goodDescr span.grey {
+  font-family: Lato;
+  color: #b9b9b9;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+}
+.cont .goodDescrCont .goodDescr span.grey.space {
+  margin-left: 44px;
+}
+.cont .goodDescrCont .goodDescr hr {
+  color: #eaeaea;
+  background-color: #eaeaea;
+  /*для Firefox, Opera, Safari*/
+  border: 0px none;
+  width: 99%;
+  height: 1px;
+  /* высота 1px IE, Firefox, Opera, Safari */
+  clear: both;
+  /* для очистки, если тег идет после float елемента */
+}
+.cont .goodDescrCont .goodDescr .form {
+  margin-top: 63px;
+  margin-left: 30px;
+}
+.cont .goodDescrCont .goodDescr .gOptions {
+  text-align: left;
+  margin-bottom: 28px;
+  float: left;
+  width: 195px;
+  /*border: solid 1px black;*/
+}
+.cont .goodDescrCont .goodDescr .gOptions span {
+  font-family: Lato;
+  color: #2f2f2f;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cont .goodDescrCont .goodDescr .gOptions input {
+  margin-top: 14px;
+  height: 35px;
+  width: 110px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-family: Lato;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  /*box-sizing: border-box;*/
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 400;
+}
+.cont .goodDescrCont .goodDescr .gOptions input ::-webkit-input-placeholder {
+  color: #bcbcbc;
+}
+.cont .goodDescrCont .goodDescr .goodBuy {
+  margin-left: 0px;
+  clear: both;
+  height: 55px;
+  width: 537px;
+  border: solid 1px #ef5b70;
+  font-family: Lato;
+  color: #ef5b70;
+  font-size: 16px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  line-height: 55px;
+  cursor: pointer;
+}
+.cont .goodDescrCont .goodDescr .goodBuy img {
+  margin-bottom: -5px;
+  margin-right: 15px;
 }
 .cont .head {
   height: 100px;
@@ -283,7 +456,7 @@ body {
   line-height: 50px;
 }
 .cont .catalog {
-  height: 767px;
+  /*height: 767px;*/
   width: 1141px;
 }
 .cont .catalog ul {
@@ -442,9 +615,45 @@ body {
   text-align: left;
 }
 .cont .spacer4 {
+  clear: both;
   height: 97px;
 }
+.cont aside {
+  clear: both;
+}
+.cont .navText {
+  height: 199px;
+  background-color: #f8f3f4;
+}
+.cont .navText .navTexCont {
+  height: 148px;
+  width: 1142px;
+}
+.cont .navText .navTexCont p {
+  text-transform: uppercase;
+  float: left;
+  line-height: 148px;
+  font-family: Lato;
+  font-size: 24px;
+  /* Approximation due to font substitution */
+  font-weight: 900;
+}
+.cont .navText .navTexCont p + p {
+  float: right;
+  font-family: Lato;
+  font-size: 14px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+}
+.cont .navText .navTexCont p + p a {
+  text-decoration: none;
+  color: black;
+}
+.cont .navText .navTexCont p + p a:hover {
+  color: #f16d7f;
+}
 .cont .subscribe {
+  clear: both;
   height: 327px;
   background-image: url('../img/subscribe.png');
   padding-top: 111px;
@@ -453,6 +662,7 @@ body {
 .cont .subscribe .subscribeLeft {
   float: left;
   width: 497px;
+  box-sizing: border-box;
 }
 .cont .subscribe .subscribeLeft img {
   float: left;
@@ -471,7 +681,7 @@ body {
   text-align: left;
   padding-top: 3px;
   font-weight: 600;
-  letter-spacing: 0.01em ;
+  letter-spacing: 0.01em;
   color: rgba(34, 34, 36, 0.67);
 }
 .cont .subscribe .subscribeLeft .sign {
@@ -496,8 +706,9 @@ body {
 .cont .subscribe .subscribeRight {
   float: left;
   margin-left: 165px;
-  width: 386px;
+  width: 390px;
   text-align: center;
+  box-sizing: border-box;
 }
 .cont .subscribe .subscribeRight p {
   text-transform: uppercase;
@@ -530,23 +741,31 @@ body {
   border: none;
   padding-left: 28px;
   padding-right: 28px;
-  border-radius: 50px 0 0 50px ;
+  border-radius: 50px 0 0 50px;
   font-family: Lato;
   color: rgba(34, 34, 36, 0.67);
   font-size: 14px;
   /* Approximation due to font substitution */
   font-weight: 400;
+  display: block;
+  float: left;
   line-height: 54px;
   /* Approximation due to font substitution */
 }
 .cont .subscribe .subscribeRight input:focus {
   outline: none;
 }
+.cont .subscribe .subscribeRight footer {
+  clear: both;
+}
 .cont .subscribe .subscribeRight button {
+  margin-top: 35px;
   background-color: #f16d7f;
   width: 104px;
   height: 46px;
   border: none;
+  display: block;
+  float: left;
   border-radius: 0 50px 50px 0;
   font-family: Lato;
   color: #ffffff;
