@@ -7,14 +7,20 @@ html, body {
   padding: 0;
 }
 
+main{
+  clear: both;
+}
+
 .red {
   color: #f16d7f;
 }
 
 .hover {
   position: relative;
-  top: -284px;
+  top: -280px;
   cursor: pointer;
+  width: 261px;
+  height: 280px;
 
 }
 
@@ -22,6 +28,43 @@ html, body {
   content: " ";
   display: table;
   clear: both;
+}
+
+
+.cRed{
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 20px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: #ef5b70;
+}
+
+.cBlack{
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 20px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+}
+
+.cBlue{
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 20px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: blue;
+}
+
+.menuTitle{
+  margin-left: 10px;
+  margin-top: 5px;
+  font-weight: 600;
 }
 
 .cont {
@@ -81,7 +124,7 @@ html, body {
     background-color: white;
 
     .goodDescr {
-      width: 618px;
+      width: 675px;
       margin-top: 73px;
       text-align: center;
 
@@ -144,13 +187,32 @@ html, body {
 
       .form {
         margin-top: 63px;
-        margin-left: 30px;
+        margin-left: 36px;
       }
       .gOptions {
+
+
+
+          .bColorBut{
+            width: 110px;
+            height: 35px;
+            margin-top: 14px;
+            text-align: left;
+            background-color: white;
+            border: solid 1px #eaeaea;
+
+            .bRight{
+              text-align: right;
+            }
+          }
+
+
+
         text-align: left;
         margin-bottom: 28px;
         float: left;
-        width: 195px;
+        width: 185px;
+        margin-right: 28px;
         /*border: solid 1px black;*/
         span {
           font-family: Lato;
@@ -226,6 +288,7 @@ html, body {
     .brandText {
       margin-left: 13px;
       margin-bottom: 12px;
+      margin-top: 40px;
 
     }
 
@@ -247,12 +310,11 @@ html, body {
       .headBrowseBt {
 
         font-family: Lato;
-        padding-right: 9px;
         color: #222222;
         font-size: 14px; /* Approximation due to font substitution */
         font-weight: 300;
-        line-height: 32px; /* Approximation due to font substitution */
-        text-align: right;
+
+        
         border-bottom-left-radius: 3px;
         border-top-left-radius: 3px;
         border-style: solid;
@@ -314,11 +376,15 @@ html, body {
         font-family: Lato;
         color: #a4a4a4;
         padding-right: 16px;
+        text-align: left;
         &:focus {
           outline: none;
         }
       }
     }
+
+
+
 
     .cart {
       float: right;
@@ -691,6 +757,7 @@ html, body {
             text-decoration: none;
             color: black;
             &:hover {
+
               color: #f16d7f;
             }
           }
@@ -701,7 +768,7 @@ html, body {
 
   .subscribe {
     clear: both;
-    height: 327px;
+    height: 430px;
     background-image: url('../img/subscribe.png');
     background-size: cover;
     padding-top: 111px;
@@ -753,6 +820,7 @@ html, body {
       text-align: center;
       box-sizing: border-box;
       float: right;
+
       margin-right: 25%;
       p {
         text-transform: uppercase;
@@ -775,6 +843,7 @@ html, body {
         text-align: center;
       }
       input {
+        margin-left: 30px;
         margin-top: 35px;
         background-color: #e1e1e1;
         width: 226px;

@@ -6,18 +6,55 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+main {
+  clear: both;
+}
 .red {
   color: #f16d7f;
 }
 .hover {
   position: relative;
-  top: -284px;
+  top: -280px;
   cursor: pointer;
+  width: 261px;
+  height: 280px;
 }
 .clearfix:after {
   content: " ";
   display: table;
   clear: both;
+}
+.cRed {
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 20px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: #ef5b70;
+}
+.cBlack {
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 20px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+}
+.cBlue {
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 20px;
+  float: left;
+  width: 12px;
+  height: 12px;
+  background-color: blue;
+}
+.menuTitle {
+  margin-left: 10px;
+  margin-top: 5px;
+  font-weight: 600;
 }
 .cont {
   min-width: 1600px;
@@ -72,7 +109,7 @@ body {
   background-color: white;
 }
 .cont .goodDescrCont .goodDescr {
-  width: 618px;
+  width: 675px;
   margin-top: 73px;
   text-align: center;
 }
@@ -141,14 +178,26 @@ body {
 }
 .cont .goodDescrCont .goodDescr .form {
   margin-top: 63px;
-  margin-left: 30px;
+  margin-left: 36px;
 }
 .cont .goodDescrCont .goodDescr .gOptions {
   text-align: left;
   margin-bottom: 28px;
   float: left;
-  width: 195px;
+  width: 185px;
+  margin-right: 28px;
   /*border: solid 1px black;*/
+}
+.cont .goodDescrCont .goodDescr .gOptions .bColorBut {
+  width: 110px;
+  height: 35px;
+  margin-top: 14px;
+  text-align: left;
+  background-color: white;
+  border: solid 1px #eaeaea;
+}
+.cont .goodDescrCont .goodDescr .gOptions .bColorBut .bRight {
+  text-align: right;
 }
 .cont .goodDescrCont .goodDescr .gOptions span {
   font-family: Lato;
@@ -214,6 +263,7 @@ body {
 .cont .head .brandText {
   margin-left: 13px;
   margin-bottom: 12px;
+  margin-top: 40px;
 }
 .cont .head .headSearch {
   margin-left: 429px;
@@ -234,14 +284,10 @@ body {
 }
 .cont .head .headSearch .headBrowseBt {
   font-family: Lato;
-  padding-right: 9px;
   color: #222222;
   font-size: 14px;
   /* Approximation due to font substitution */
   font-weight: 300;
-  line-height: 32px;
-  /* Approximation due to font substitution */
-  text-align: right;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
   border-style: solid;
@@ -301,6 +347,7 @@ body {
   font-family: Lato;
   color: #a4a4a4;
   padding-right: 16px;
+  text-align: left;
 }
 .cont .head .headSearch .headSearchInput:focus {
   outline: none;
@@ -657,7 +704,7 @@ body {
 }
 .cont .subscribe {
   clear: both;
-  height: 327px;
+  height: 430px;
   background-image: url('../img/subscribe.png');
   background-size: cover;
   padding-top: 111px;
@@ -740,6 +787,7 @@ body {
   text-align: center;
 }
 .cont .subscribe .subscribeRight input {
+  margin-left: 30px;
   margin-top: 35px;
   background-color: #e1e1e1;
   width: 226px;
