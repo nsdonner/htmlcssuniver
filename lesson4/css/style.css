@@ -1140,6 +1140,9 @@ main {
 .cont .subscribe .subscribeRight button:focus {
   outline: none;
 }
+.cont .subscribe .subscribeRight button:hover {
+  color: black;
+}
 .cont .spacer5 {
   height: 109px;
   background: snow;
