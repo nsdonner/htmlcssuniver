@@ -1,3 +1,11 @@
+@keyframes anim {
+  from {margin-left:3px;}
+  to {margin-left:10px;}
+}
+
+
+
+
 html, body {
   height: 100%;
 }
@@ -745,6 +753,13 @@ main {
       margin-bottom: 12px;
       margin-top: 40px;
 
+      &:hover{
+        animation:anim 0.3s 200;
+      }
+
+
+
+
     }
 
     .headSearch {
@@ -859,12 +874,23 @@ main {
         &:focus {
           outline: none;
         }
+        &:hover{
+          transform: rotate(5deg);
+        }
       }
 
       .cartimg {
         float: right;
         display: block;
         padding-top: 5px;
+
+
+
+
+        &:hover{
+          transform: scale(1.1);
+
+        }
       }
 
     }
@@ -908,6 +934,13 @@ main {
         line-height: 26px;
         letter-spacing: 1px;
         white-space: nowrap;
+
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -o-transition: color 0.5s;
+
+
+
         &:hover {
           color: #f16d7f;
         }
@@ -918,7 +951,7 @@ main {
   .promo {
     height: 665px;
     background-image: url('../img/promo.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #e8e8e8;
     .promotext {

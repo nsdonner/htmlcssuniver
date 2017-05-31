@@ -1,3 +1,11 @@
+@keyframes anim {
+  from {
+    margin-left: 3px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
 html,
 body {
   height: 100%;
@@ -682,6 +690,9 @@ main {
   margin-bottom: 12px;
   margin-top: 40px;
 }
+.cont .head .brandText:hover {
+  animation: anim 0.3s 200;
+}
 .cont .head .headSearch {
   /*margin-left: 429px;*/
   margin-top: -45px;
@@ -792,10 +803,16 @@ main {
 .cont .head .cart .account:focus {
   outline: none;
 }
+.cont .head .cart .account:hover {
+  transform: rotate(5deg);
+}
 .cont .head .cart .cartimg {
   float: right;
   display: block;
   padding-top: 5px;
+}
+.cont .head .cart .cartimg:hover {
+  transform: scale(1.1);
 }
 .cont .upperMenu {
   text-align: left;
@@ -833,6 +850,9 @@ main {
   line-height: 26px;
   letter-spacing: 1px;
   white-space: nowrap;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
 }
 .cont .upperMenu ul a:hover {
   color: #f16d7f;
@@ -840,7 +860,7 @@ main {
 .cont .promo {
   height: 665px;
   background-image: url('../img/promo.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #e8e8e8;
 }
