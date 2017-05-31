@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+<div class="cont">
+
+    <header>
+        <div class="hBorder">
+            <div class="col-md-offset-2 col-md-8 head">
+                <img src="img/logo.png" class="logo" alt="">
+                <img src="img/brandtext.png" class="brandText" alt="">
+                <!--<div class="headSearch">
+                    <button class="headBrowseBt">Browse <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <input type="text" class="headSearchInput" placeholder="Search for item...">
+                    <button class="headBrowseBtSearch"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>-->
+
+
+                <div class="input-group dropdown headSearch">
+                    <button class="input-group-addon btn btn-default dropdown-toggle headBrowseBt" type="button"
+                            id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Browse <span class="caret"></span>
+
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li class="menuTitle">Women</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Sweaters/Knits</a></li>
+                        <li><a href="#">Jackets/Coats</a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">Leggins/Pants</a></li>
+                        <li><a href="#">Skirts/Shorts</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li class="menuTitle">Men</li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Tees/Tank tops</a></li>
+                        <li><a href="#">Shirt/Polos</a></li>
+                        <li><a href="#">Sweeters</a></li>
+                        <li><a href="#">Sweatshirts/Hoodies</a></li>
+                        <li><a href="#">Blazers</a></li>
+                        <li><a href="#">Jackets/vests</a></li>
+                    </ul>
+
+
+                    <input type="text" class="input-group-addon headSearchInput" placeholder="Search for item...">
+                    <button class="input-group-addon headBrowseBtSearch"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+
+                <div class="cart">
+                    <button class="account">My Account &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <a href=""><img class="cartimg" src="img/cart.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="navText">
+            <nav>
+                <div class="upperMenu">
+                    <ul class="col-md-8 col-md-offset-2">
+                        <li class=""><a href="">home</a></li>
+                        <li class=""><a href="">man</a></li>
+                        <li class=""><a href="">women</a></li>
+                        <li class=""><a href="">kids</a></li>
+                        <li class=""><a href="">accessories</a></li>
+                        <li class=""><a href="">featured</a></li>
+                        <li class=""><a href="">hot deals</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="col-md-offset-2 col-md-8 navTexCont">
+                <p class="red">new arrivals</p>
+                <p class="red"><a href="">home</a>/<a href="">men</a>/new arrivals</p>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <ol class="col-md-offset-2 col-md-8 checkList">
+            <li class="">shipping address<br>
+
+                <div class="col-md-6 checkedLeft">
+                    <h4>check as a guest or register</h4>
+                    <p>Register with us for future convenience</p>
+                    <form action="">
+                        <input type="radio" name="who" id="guest"> <label for="guest" class="chSmall">checkout as
+                        guest</label><br>
+                        <input type="radio" name="who" id="reg"> <label for="reg" class="chSmall">register</label>
+                    </form>
+                    <h4>register and save time!</h4>
+                    <p>Register with us for future convenience</p><br>
+                    <p>>> Fast and easy checkout</p>
+                    <p>>> Easy access to your order history and status</p>
+                    <button>continue</button>
+
+                </div>
+                <div class="col-md-6 checkedRight">
+                    <h4>Already registed?</h4>
+                    <p>Please log in below</p>
+                    <form class="login" action="">
+                        <p class="chSmall">EMAIL ADDRESS *</p>
+                        <input type="email">
+                        <p class="chSmall">PASSWORD *</p>
+                        <input type="password">
+                        <p class="red">* Required Fileds</p>
+                        <button>log in</button>
+                        <a href="">Forgot password?</a>
+                    </form>
+                </div>
+
+            </li>
+            <li class="">billing information</li>
+            <li>shipping information</li>
+            <li>shipping method</li>
+            <li>payment method</li>
+            <li>order review</li>
+        </ol>
+    </main>
+    <aside>
+
+        <div class="spacer4"></div>
+        <div class="subscribe">
+            <div class="subscribeLeft">
+                <img src="img/subscribeFace.png" alt="">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam
+                    condimentum mattis neque sed pretium”</p>
+
+                <p class="sign"><span class="red">Bin Burhan</span><br>
+                    <span class="signLoc">Dhaka, Bd</span>
+                </p>
+            </div>
+            <div class="subscribeRight">
+                <p class="subscribeRightText1">subscribe</p>
+                <p class="subscribeRightText2">for our newletter and promotion</p>
+                <input type="email" placeholder="Enter Your Email">
+                <button name="subscribe">Subscribe</button>
+            </div>
+        </div>
+        <div class="spacer5"></div>
+    </aside>
+    <footer>
+        <div class="footerMenu">
+
+
+            <div class="fBrand">
+                <img src="img/logo.png" class="logo" alt="">
+                <img src="img/brandtext.png" class="brandtext" alt="">
+                <p>
+                    Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                    syndicate
+                    multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                    processes and cross-unit partnerships.
+                </p>
+                <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+
+
+            </div>
+            <nav>
+                <div class="fCompany">
+                    <ul>
+                        <li>company</li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">How it works</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="fInformation">
+                    <ul>
+                        <li>information</li>
+                        <li><a href="">Terms & Condition</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">How to Buy</a></li>
+                        <li><a href="">How to Sell</a></li>
+                        <li><a href="">Promotion</a></li>
+                    </ul>
+                </div>
+                <div class="fShop">
+                    <ul>
+                        <li>shop category</li>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Women</a></li>
+                        <li><a href="">Child</a></li>
+                        <li><a href="">Apparel</a></li>
+                        <li><a href="">Brows All</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <div class="copyright">
+            <p>© 2017 Brand All Rights Reserved.</p>
+            <ul>
+                <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                <li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+            </ul>
+
+        </div>
+    </footer>
+
+
+</div>
+</body>
+</html>
