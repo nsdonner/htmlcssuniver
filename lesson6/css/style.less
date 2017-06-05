@@ -15,6 +15,19 @@ html, body {
   padding: 0;
 }
 
+@media screen and (max-width: 1460px)
+{
+  .promo2Text{
+    display: none;
+  }
+  .promo2Logo{
+    float: none !important;
+    margin: 0 auto !important;
+  }
+  .promo2 {
+    width: auto !important;
+  }
+}
 
 @media screen and (max-width: 1650px)
 {
@@ -35,14 +48,56 @@ html, body {
   .headSearchInput {
     width: 150px !important;
   }
+
+  .catLeft{
+    float: none !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .catRight{
+    margin-top: 20px;
+    float: none !important;
+    width: auto !important;
+    height: auto !important;
+  }
+  .categories{
+    height: auto !important;
+    width: auto !important;
+  }
+  .catalog{
+    width: 922px !important;
+  }
+  .cont .catalog ul li:nth-child(4n) .item {
+    margin-right: 29px !important;
+
+  }
+
+  .cont .catalog ul li:nth-child(3n) .item {
+    margin-right: 0 !important;
+
+  }
+
+  .promo2Text{
+    visibility: hidden;
+    display: none;
+  }
+
+
+
+
 }
 
 @media screen and (min-width: 900px) and (max-width: 1200px)
 {
   .headSearchInput {
-    width: 300px !important;
+    width: 200px !important;
   }
 }
+
+
+
+
 
 
 .gDetails {
@@ -71,7 +126,7 @@ html, body {
 
 .cartGoods {
   height: 100%;
-  width: 1140px;
+ /* width: 1140px;*/
   padding-top: 90px;
   text-align: center;
 
@@ -490,7 +545,7 @@ main {
 
 
 .clearfix:after {
-  content: "";
+  content: " ";
   display: table;
   clear: both;
 }
@@ -576,7 +631,7 @@ main {
 .cont {
 
   /*min-width: 1600px;*/
-  min-width: 1141px;
+  min-width: 922px;
   height: auto;
   border-style: solid;
   border-width: 1px;
@@ -1075,6 +1130,8 @@ main {
     }
   }
   .spacer2 {
+    clear: both;
+    .clearMix();
     height: 211px;
     text-align: center;
     .sp2t1 {
@@ -1180,6 +1237,7 @@ main {
   }
   .promo2 {
     height: 529px;
+    /*min-width: 922px;*/
     width: 1140px;
 
     .promo2Logo {
@@ -1209,7 +1267,7 @@ main {
       }
     }
     .promo2Text {
-      width: 373px;
+      width: 370px;
       height: 529px;
       background-color: #222224;
       float: left;
