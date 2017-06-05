@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+<div class="cont">
+
+    <header>
+        <div class="hBorder">
+            <div class="col-lg-offset-2 col-lg-8 col-md-12 col-sm-12 col-xs-12 head">
+                <div class="col-xs-3 logoCont">
+                    <img src="img/logo.png" class="logo" alt="">
+                    <img src="img/brandtext.png" class="brandText" alt="">
+                </div>
+
+                <div class="col-xs-5 logoSearch">
+                    <div class="input-group dropdown headSearch">
+                        <button class="input-group-addon btn btn-default dropdown-toggle headBrowseBt" type="button"
+                                id="dropdownMenu1"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Browse <span class="caret"></span>
+
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li class="menuTitle">Women</li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Sweaters/Knits</a></li>
+                            <li><a href="#">Jackets/Coats</a></li>
+                            <li><a href="#">Blazers</a></li>
+                            <li><a href="#">Denim</a></li>
+                            <li><a href="#">Leggins/Pants</a></li>
+                            <li><a href="#">Skirts/Shorts</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li class="menuTitle">Men</li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Tees/Tank tops</a></li>
+                            <li><a href="#">Shirt/Polos</a></li>
+                            <li><a href="#">Sweeters</a></li>
+                            <li><a href="#">Sweatshirts/Hoodies</a></li>
+                            <li><a href="#">Blazers</a></li>
+                            <li><a href="#">Jackets/vests</a></li>
+                        </ul>
+                        <input type="text" class="input-group-addon headSearchInput" placeholder="Search for item...">
+                        <button class="input-group-addon headBrowseBtSearch"><i class="fa fa-search"
+                                                                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xs-4 cart">
+                    <button class="account">My Account &nbsp; <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+                    <a href=""><img class="cartimg" src="img/cart.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="navText">
+            <nav>
+                <div class="upperMenu">
+                    <ul class="col-lg-8 col-lg-offset-2 col-xs-12 col-sm-12">
+                        <li class=""><a href="">home</a></li>
+                        <li class=""><a href="">man</a></li>
+                        <li class=""><a href="">women</a></li>
+                        <li class=""><a href="">kids</a></li>
+                        <li class=""><a href="">accessories</a></li>
+                        <li class=""><a href="">featured</a></li>
+                        <li class=""><a href="">hot deals</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-sm-12 navTexCont">
+                <p class="red">new arrivals</p>
+                <p class="red"><a href="">home</a>/<a href="">men</a>/new arrivals</p>
+            </div>
+
+        </div>
+    </header>
+    <main>
+
+        <div class="cartGoods">
+            <div class="cartGoodsCols">
+                <div class="col-md-3 gDetails">product details</div>
+                <div class="col-md-2">unite price</div>
+                <div class="col-md-2">quantity</div>
+                <div class="col-md-2">shipping</div>
+                <div class="col-md-2">subtotal</div>
+                <div class="col-md-1">action</div>
+            </div>
+
+            <ul class="goodsList">
+                <li class="goodsItem">
+
+                    <div class="col-md-3 gDetails">
+                        <img src="img/cartGood1.png" alt="">
+                        <p class="gName">mango people t-shirt</p>
+                        <p class="gProp">Color: <span> Red</span></p>
+                        <p class="gProp">Size: XL</p>
+                    </div>
+                    <div class="col-md-2 itemDesc">$150</div>
+                    <div class="col-md-2 itemDesc"><input type="text" value="2"></div>
+                    <div class="col-md-2 itemDesc">free</div>
+                    <div class="col-md-2 itemDesc">$300</div>
+                    <div class="col-md-1 itemDesc"><span class="glyphicon glyphicon-remove-sign"></span></div>
+
+                </li>
+                <li class="goodsItem">
+                    <div class="col-md-3 gDetails">
+                        <img src="img/cartGood2.png" alt="">
+                        <p class="gName">mango people t-shirt</p>
+                        <p class="gProp">Color: <span> Red</span></p>
+                        <p class="gProp">Size: XL</p>
+                    </div>
+                    <div class="col-md-2 itemDesc">$150</div>
+                    <div class="col-md-2 itemDesc"><input type="text" value="2"></div>
+                    <div class="col-md-2 itemDesc">free</div>
+                    <div class="col-md-2 itemDesc">$300</div>
+                    <div class="col-md-1 itemDesc"><span class="glyphicon glyphicon-remove-sign"></span></div>
+                </li>
+                <li class="goodsItem">
+                    <div class="col-md-3 gDetails">
+                        <img src="img/cartGood3.png" alt="">
+                        <p class="gName">mango people t-shirt</p>
+                        <p class="gProp">Color: <span> Red</span></p>
+                        <p class="gProp">Size: XL</p>
+                    </div>
+                    <div class="col-md-2 itemDesc">$150</div>
+                    <div class="col-md-2 itemDesc"><input type="text" value="2"></div>
+                    <div class="col-md-2 itemDesc">free</div>
+                    <div class="col-md-2 itemDesc">$300</div>
+                    <div class="col-md-1 itemDesc"><span class="glyphicon glyphicon-remove-sign"></span></div>
+                </li>
+            </ul>
+
+            <div class="clearCart">clear shopping cart</div>
+            <div class="continueShopping">continue shopping</div>
+
+            <div class="checkBlock">
+                <div class="col-md-4 shipAddr">
+                    <p>shipping address</p>
+                    <input type="text" placeholder="Bangladesh">
+                    <input type="text" placeholder="State">
+                    <input type="text" placeholder="Postcode/Zip">
+                    <div class="checkBlockBut">get a quote</div>
+                </div>
+                <div class="col-md-4 discount">
+                    <p>coupon discount</p>
+                    <p>Enter your coupon code if you have one</p>
+                    <input type="text" placeholder="State">
+                    <div class="checkBlockBut">apply coupon</div>
+                </div>
+                <div class="col-md-4 checkout">
+                    <div class="checkDiv">
+                        <p>sub total <span class="sum">$900</span></p>
+                        <p>grand total <span class="gsum">$900</span></p>
+                    </div>
+                    <hr>
+                    <div class="checkoutBut">proceed to checkout</div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    <aside>
+
+        <div class="spacer4"></div>
+        <div class="subscribe">
+            <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-sm-12">
+                <div class="subscribeLeft col-md-6 col-xs-6 col-sm-6">
+                    <img src="img/subscribeFace.png" alt="">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam
+                        condimentum mattis neque sed pretium”</p>
+
+                    <p class="sign"><span class="red">Bin Burhan</span><br>
+                        <span class="signLoc">Dhaka, Bd</span>
+                    </p>
+                </div>
+                <div class="subscribeRight col-md-6 col-xs-6 col-sm-6">
+                    <p class="subscribeRightText1">subscribe</p>
+                    <p class="subscribeRightText2">for our newletter and promotion</p>
+                    <input type="email" placeholder="Enter Your Email"><button name="subscribe">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="spacer5"></div>
+    </aside>
+    <footer>
+
+        <div class="footerMenu">
+
+            <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-sm-12 ">
+                <div class="col-md-5 col-xs-5 col-sm-5 fBrand">
+                    <img src="img/logo.png" class="logo" alt="">
+                    <img src="img/brandtext.png" class="brandtext" alt="">
+                    <p>
+                        Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate
+                        multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array
+                        of
+                        processes and cross-unit partnerships.
+                    </p>
+                    <p>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+
+                </div>
+                <nav class="col-md-5 col-md-offset-2 col-xs-6 col-sm-6">
+
+
+
+
+                    <div class="col-md-4 col-xs-4 col-sm-4 fCompany">
+                        <ul>
+                            <li>company</li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">How it works</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+
+
+                    </div>
+                    <div class="col-md-4 col-xs-4 col-sm-4 fInformation">
+                        <ul>
+                            <li>information</li>
+                            <li><a href="">Terms & Condition</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">How to Buy</a></li>
+                            <li><a href="">How to Sell</a></li>
+                            <li><a href="">Promotion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-xs-4 col-sm-4 fShop">
+                        <ul>
+                            <li>shop category</li>
+                            <li><a href="">Men</a></li>
+                            <li><a href="">Women</a></li>
+                            <li><a href="">Child</a></li>
+                            <li><a href="">Apparel</a></li>
+                            <li><a href="">Brows All</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            <div class="col-lg-8 col-lg-offset-2 col-xs-12 col-sm-12 ">
+                <p class="col-md-3 col-xs-3 col-sm-3">© 2017 Brand All Rights Reserved.</p>
+                <ul class="col-md-4 col-md-offset-5 col-xs-4 col-xs-offset-5 col-sm-4 col-sm-offset-5">
+                    <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+</div>
+</body>
+</html>
